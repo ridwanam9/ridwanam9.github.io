@@ -1,0 +1,128 @@
+<!DOCTYPE <html>
+<html>
+    <head>
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link href="./style.css" rel="stylesheet"> -->
+        <title>hujan digital matrix</title>
+        <!-- <title>Belajar javascript</title> -->
+    </head>
+    <body>
+
+        <h1>Form Dalam HTML</h1>
+        <form action="#" class="container">
+            <label for="nama">Nama</label>
+            <input type="text" name="nama" id="nama"/>
+            <br>
+            <br>
+            <label for="umur">Umur</label>
+            <input type="text" name="umur" id="umur"/>
+            <br>
+            <br>
+            <label for="jeniskelamin">Jenis Kelamin</label><br>
+            <br>
+            <input type="radio" name="jeniskelamin" id="jeniskelamin" value="laki-laki"/> Laki-laki
+            <input type="radio" name="jeniskelamin" id="jeniskelamin2" value="perempuan"/> Perempuan
+            <br>
+            <br>
+            <label for="nikep">Nilai Kepuasan (1-5)</label>
+            <input type="text" name="nilai" id="nilai"/>
+            <br>
+            <br>
+            <label for="asal">Dari mana anda mengetahui produk kami</label><br>
+            <br><input type="checkbox" name="hobi" id="asal" value="Sosial Media"/> Sosial Media <br>
+            <br><input type="checkbox" name="hobi" id="asal2" value="Teman"/> Teman <br>
+            <br><input type="checkbox" name="hobi" id="asal3" value="Internet"/> Internet <br>
+            <br>
+            <label for="apakah">Apakah anda menggunakan layanan kami?</label><br>
+            <input type="radio" name="validasi" id="ya" value="ya"/> ya
+            <input type="radio" name="validasi" id="tidak" value="tidak"/> tidak
+            <br>
+            <br>
+            <label for="saran">kritik dan saran</label><br>
+            <textarea name="saran" id="saran" cols="30" rows="3"></textarea>
+            <br>
+            <br>
+            <button type="button" onclick="tampilData()">Kirim</button>
+        </form>
+
+        <script>
+            function tampilData() {
+                var nama = document.getElementById("nama").value;
+                var Umur = document.getElementById("umur").value;
+                var jeniskelamin = document.querySelector("input[name=jeniskelamin]:checked").value;
+                var nilai = document.getElementById("nilai");
+                var info = document.getElementsByName("hobi");
+                var validasi = document.querySelector("input[name=jeniskelamin]:checked").value;
+                var saran = getElementById("saran");
+                var daftarhobi = ''
+
+                for (var hobi2 of hobi){
+                    if(hobi.checked){
+                        daftarHobi += ', '+ hobi2.value
+                    }
+                }
+
+                daftarHobi = daftarHobi.substring(1)
+
+                alert(
+                    "Terima kasih telah mengisi survey. brikut data yang diisi:"+
+                    "\nNama : " + nama +
+                    "\nUmur : "+Umur+ 
+                    "\nJenis Kelamin : "+jeniskelamin +
+                    "\nInfo layanan : "+info+
+                    "\nMenggunakan Layanan: "+validasi
+                );
+            }
+        </script>
+
+
+        <!--
+        <h1>Multimedia dan Media Source dalam HTML</h1>
+        <ul>
+            <li>
+                <h2>Video</h2>
+                <hr>
+                <video controls width="400" height="200" loop autoplay muted preload="auto">
+                    <source src="./vidream_job.mp4" type="video/mp4">
+                    <p>Browser tidak mendukung!, gunakan <a href="./vidream_job.mp4">link</a>berikut</p>
+                    <track kind="captions" src="./vidream_job.vtt" srclang="en" label="English">
+                </video>
+            </li>
+            <li>
+                <h2>Audio</h2>
+                <hr>
+                <audio controls>
+                    <source src="./dream_job.m4a" type="audio/m4a">
+                    <p>Browser tidak mendukung!, gunakan <a href="./dream_job.m4a">link</a>berikut</p>
+                </audio>
+            </li>
+            <li>
+                <h2>Gambar Responsive</h2>
+                <hr>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="./bleach_cover.jpg">
+                    <source media="(max-width: 600px)" srcset="./juujika_no_rokunin_cover.png">
+                    <img src="./bleach_cover.jpg" alt="pic 1" style="width:auto;">
+                    <img src="./juujika_no_rokunin_cover.png" alt="pic 2" style="width:auto;">
+                </picture>
+            </li>
+        </ul>
+        
+        -->
+        
+        <!-- <p><a href="index.html">Halaman Utama</a></p> -->
+        <!-- <p><a href="contact.html">Kontak Kami</a></p> -->
+        <!-- <p><a href="about.html">Tentang Kami</a></p> -->
+
+
+
+        <!-- <h1>Coba h1 lagi</h1> -->
+        <!-- <img src="umy.png" alt="umy" width="300" height="300"> -->
+        <!-- <p>ini paragraph</p> -->
+        <!-- <script src="main.js"></script> -->
+
+    </body>
+</html>
+
