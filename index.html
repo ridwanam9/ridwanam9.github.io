@@ -3,59 +3,95 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Portofolio Ridwan Maulana</title>
+    <title>Ridwan Amirul Maulana - Backend Engineer Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
     <header>
         <nav class="navbar">
-            <div class="logo">Ridwan Maulana</div>
+            <div class="logo">Ridwan<span class="highlight">Maulana</span></div>
             <ul class="nav-links">
-                <li><a href="#about">Tentang Saya</a></li>
-                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Kontak</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero">
-        <h1>Halo, saya Ridwan 👋</h1>
-        <p>Backend & Fullstack Developer | Software Engineer Enthusiast</p>
+        <div class="hero-content">
+            <h1>Halo, saya Ridwan 👋</h1>
+            <p class="tagline">Back-End Engineer · Software Engineering Enthusiast · Computer Science Graduate</p>
+            <a href="#projects" class="cta-btn">Lihat Proyek</a>
+        </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="section about">
         <h2>Tentang Saya</h2>
-        <p>Saya adalah seorang backend engineer yang antusias di dunia software engineering.  
-        Familiar dengan Python, Flask, Laravel, dan PHP. Selalu tertarik mempelajari hal baru dan membangun solusi digital.</p>
+        <p>Saya lulusan Computer Science (cumlaude, GPA 3.82) dari Universitas Muhammadiyah Yogyakarta, 
+        dengan keterampilan di Python, PHP, JavaScript, Laravel, dan Flask.  
+        Berpengalaman mengembangkan RESTful API, aplikasi CLI, dan sistem manajemen data berbasis web.  
+        Saat ini mengikuti Full-Stack Software Engineering Program di RevoU untuk memperdalam keahlian.  
+        Passionate di backend development & ingin membangun sistem yang scalable & impactful.</p>
     </section>
 
-    <section id="portfolio" class="portfolio">
-        <h2>Portofolio</h2>
+    <section id="experience" class="section experience">
+        <h2>Pengalaman</h2>
+        <div class="experience-card">
+            <h3>Web Developer Intern - PKU Muhammadiyah Gamping Hospital</h3>
+            <p class="date">Februari - Maret 2023 | Yogyakarta, Indonesia</p>
+            <ul>
+                <li>Mengembangkan sistem form rekam medis pasien berbasis web menggunakan Laravel & PHP.</li>
+                <li>Meningkatkan efisiensi input data sebesar 50% dibanding metode manual.</li>
+                <li>Berkoordinasi dengan staf rumah sakit & supervisor akademik untuk implementasi fitur.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section portfolio">
+        <h2>Proyek</h2>
         <div class="projects">
             <div class="project-card">
-                <h3>Proyek 1</h3>
-                <p>Website E-commerce dengan Laravel & Vue.js.</p>
+                <h3>Karya Rasa (Backend)</h3>
+                <p>RESTful API menggunakan Flask & SQLAlchemy ORM.  
+                Fitur: modular routing, autentikasi aman (password hashing), integrasi PostgreSQL via Supabase, deploy di Koyeb.</p>
             </div>
             <div class="project-card">
-                <h3>Proyek 2</h3>
-                <p>REST API Banking System menggunakan Flask & PostgreSQL.</p>
-            </div>
-            <div class="project-card">
-                <h3>Proyek 3</h3>
-                <p>Landing Page untuk UMKM (Next.js + Tailwind CSS).</p>
+                <h3>Task Tracker CLI</h3>
+                <p>Aplikasi CLI berbasis Python, dengan full CRUD & persistence menggunakan file JSON.  
+                Dibangun dengan arsitektur modular & extensible.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="skills" class="section skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>Python</li>
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>Flask</li>
+            <li>Laravel</li>
+            <li>Next.js</li>
+            <li>HTML & CSS</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section contact">
         <h2>Kontak</h2>
-        <p>Email: ridwan@email.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/ridwanmaulana" target="_blank">linkedin.com/in/ridwanmaulana</a></p>
+        <p>Email: <a href="mailto:ridwanamirulmaulana8@gmail.com">ridwanamirulmaulana8@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/ridwan-maulana-ab1668238" target="_blank">linkedin.com/in/ridwan-maulana-ab1668238</a></p>
+        <p>WhatsApp: <a href="https://wa.me/6289668630955" target="_blank">+62 896-6863-0955</a></p>
     </section>
 
     <footer>
-        <p>© 2025 Ridwan Maulana. All rights reserved.</p>
+        <p>© 2025 Ridwan Amirul Maulana · All rights reserved.</p>
     </footer>
 
 </body>
