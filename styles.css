@@ -28,6 +28,29 @@ html {
     color: #fff;
 }
 
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+.hero-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 /* Certifications & Volunteering */
 #certifications ul {
     list-style: disc;
@@ -41,6 +64,15 @@ html {
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.2rem;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
     }
 
     .navbar .nav-links {
