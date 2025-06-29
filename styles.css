@@ -303,6 +303,15 @@ body {
     background: #e0f2f1;
     padding: 0.5rem 1rem;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.skills-list img {
+    width: 20px;
+    height: 20px;
 }
 
 /* Contact */
